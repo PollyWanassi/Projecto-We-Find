@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="compras.css">
+
+</head>
+<body>
+    <header>
+        <img src="/assets/img/logo.png" width="55px" height="55px" alt="logo">
+        <nav>
+      
+        <ul>
+            <li><a href="#">Minha Loja</a></li>
+            <li><a href="#">Loja</a></li>
+            <li><a href="#">Vender</a></li>
+            <li><a href="#">Carrinho</a></li>
+        </ul>
+    </nav>
+</header>
+    <h1 class="tit">REGISTRO DE CASAS</h1>
+        <form class="container" action="#" method="#">
+       
+<br>
+            <div class="container-principal">
+                <div class="select-container">
+                  
+                    <fieldset name="det">
+                        <legend >Descrição</legend>
+
+                        <label for="ed">Tipo de Edificio</label>
+                        <select name="" id="ed">
+                            <option value="Loja">Edificio Comercial</option>
+                            <option value="casa">Edificio Residencial</option>
+                            <option value="Fábrica">Edificio Industrial</option>
+                        </select>
+                        
+                        <label for="qu">Nº de Quartos</label>
+                        <select name="" id="qu">
+                            <option value="T1">1 Quarto</option>
+                            <option value="T2">2 Quarto</option>
+                            <option value="T3">3 Quarto</option>
+                            <option value="T4">4 Quarto</option>
+                            <option value="T5">5 Quarto</option>
+                            <option value="T6">6 Quarto</option>
+                            <option value="T7">7 Quarto</option>
+                        </select>
+
+                       <label for="isuites">Suites</label>
+                        <select name="" id="isuites">
+                            <option value="">1 Suite</option>
+                            <option value="">2 Suites</option>
+                            <option value="">3 Suites</option>
+                        </select>
+                    </fieldset>
+                    <fieldset class="campo-loc">
+                        <legend>Localização</legend>
+                        <label for="iprovincia">Província</label>
+                        <input class="textinp" type="text" id="iprovincia" ><br>
+                        <label for="imucipio">Municipio</label>
+                        <input class="textinp" type="text" id="imucipio"><br>
+                        <label for="ibairro">Bairro</label>
+                        <input class="textinp" type="text" id="ibairro">
+                    </fieldset>
+                        <br>
+                        
+                    <label for="itextarea">Detalhes</label><br>
+                        <textarea class="texta" name="" id="itextarea" cols="50" rows="10" maxlength="400" placeholder="Escreva os detalhes da própriedade em menos de 400 palavras"></textarea>
+                        <br><br>
+
+                        <div class="container-direito">
+
+                            <h3>Pretende</h3>
+                            <label for="ivender">Vender
+                            <input class="rad-b" type="radio" name="alugar/vender" id="ivender" value="Vender"></label>
+                            <label for="ialugar">Alugar</label>
+                            <input class="rad-b" type="radio" name="alugar/vender" id="ialugar"value="Alugar">
+                                <br>
+                                
+                                
+                                <br>
+                                
+                                <label for="ipreco">Preço <input class="textinp" type="number" name="preço" id="ipreco"></label>
+                                <br>
+                                <br>
+                                <h3>Escolha 4 imagens da propriedade</h3>
+                                <input type="file">
+                                <input type="file">
+                                <input type="file">
+                                <input type="file">
+                        </div><br>
+                </div>         
+                           <!-- -->
+                <br>
+                
+            </div>
+
+            <div class="buttons">
+                <input class="sub-res" type="reset" name="Cancelar">
+                <input class="sub-res" type="submit" name="Cadastrar" id="sub">
+            </div>
+        </form>
+    
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Css -->
+    <link rel="stylesheet" href="perfil-basico.css">
+
+    <title>Segurança/Pagamento </title>
+</head>
+<body>
+    
+    <header class="navbar">
+        <!--  NavBar -->
+    
+        <img src="img/logo.png"  width="55px" height="55px" alt="" class="logo">
+        <nav>
+            
+            <div class="nav-lists">
+                <li><a href="">Minha Conta</a></li>
+                <li><a href="">loja</a></li>
+                <li><a href="">Vender</a></li>
+                <li><a href="">Carrinho</a></li>
+            </div>
+            <img src="img/user.jpg" alt="" class="user-pic" onclick="toggleMenu()">
+    
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="img/user.jpg">
+                        <h2>Carlos Sissimo</h2>
+                    </div>
+                    <hr>
+    
+                    <a href="#" class="sub-menu-link">
+                        <img src="bx-user.svg" alt="">
+                        <p>Editar Perfil</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <img src="bx-cog.svg" alt="">
+                        <p>Settings & Privacy</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <img src="bx-help-circle.svg" alt="">
+                        <p>Help & Support</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <img src="bx-exit.svg" alt="">
+                        <p>Logout</p>
+                        <span>></span>
+                    </a>
+    
+    
+                </div>
+            </div>
+    
+        </nav>
+    </header>
+
+    <section class="container forms">
+        <div class="form login">
+            <div class="form-content">
+                <img src="img/logo.png" alt="" class="go"></a>
+                <header class="lo">Nome</header><br><br><br><br>
+
+                 <form action="#">
+
+                    <div class="perfil">
+                        <h2>PASSWORD</h2><h5>passExample**</h5>
+                    </div>
+
+                    <div class="perfil">
+                        <h2>AUNTENTICAÇÃO 2 FACTORES</h2><h5>Ativar</h5>
+                    </div>
+
+                    <div class="perfil">
+                        <h2>Metódo De Pagamento </h2>
+                        <h5>Paypal</h5>
+                        <h5>Visa/MasterCard</h5>
+                    </div>
+
+                     <div class="field button-field">
+                        <button>Guardar</button>
+                     </div>
+                     <br><br>
+                 </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== java ===== -->
+
+    <script>
+
+        let subMenu=document.getElementById("subMenu");
+    
+        function toggleMenu(){
+            subMenu.classList.toggle("open-menu");
+        }
+    
+    </script>
+
+</body>
+</html>

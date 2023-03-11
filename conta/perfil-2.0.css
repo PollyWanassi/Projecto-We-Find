@@ -1,0 +1,120 @@
+body{
+    background-image:linear-gradient(330deg, #243038, #627a86)
+}
+
+
+/*========== Formulario ========*/
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.form{
+    position: absolute;
+    max-width: 430px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    background: white;  
+}
+.lo{
+    font-family: balans;
+    font-size: 28px;
+    font-weight: 600;
+    color: #243038;
+    text-align: center;
+}
+form{
+    margin-top: 30px;
+}
+.perfil{
+    
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    align-items:left;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.perfil h2{
+    font-family: balans;
+    color: #243038;
+    font-size: 1.5em;
+    margin-top: 1px;
+    margin-left: 40px;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 600;
+    line-height: 1em;
+}
+.perfil span{
+    font-family: apercu;
+    text-align:right;
+    color: #243038;
+    margin-right: 7rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.field button{
+    height: 100%;
+    width: 50%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 30px;
+    position: relative;
+    left: 7.5rem;
+}
+.field input:focus{
+    border-bottom-width: 2px;
+}
+.field button{
+    font-family: balans;
+    color: white;
+    background-color: #46565d;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.field button:hover{
+    background-color: gray;
+}
+.form-link{
+    text-align: center;
+    margin-top: 10px;
+}
+.form-link span, .form-link a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #03254c;
+}
+.form a{
+    color: #2a9df4;
+    text-decoration: none;
+}
+.form-content a:hover{
+    text-decoration: underline;
+}
+
+/*====== Imagem =====*/
+.go
+{
+    background:linear-gradient(330deg, #243038, #627a86);
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    left: 10.5rem;
+}
+/*===== Medida ====*/
+@media screen and (max-width: 400px){
+    .form{
+        padding: 15px 10px;
+    }
+    .container{
+        position: relative;
+        margin-top: 20vh;
+    }
+}
