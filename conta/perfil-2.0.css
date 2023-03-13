@@ -16,6 +16,7 @@ body{
     justify-content: space-between;
 }
 nav{
+    font-family: balans;
     width: 100%;
     padding: 10px 10%;
     display: flex;
@@ -273,12 +274,12 @@ form{
 
 
 /*===== Medida ====*/
-@media screen and (max-width: 400px){
+@media screen and (max-width: 1000px){
     .form{
         padding: 15px 10px;
     }
     .container{
         position: relative;
-        margin-top: 50vh;
+        margin-top: 30vh;
     }
 }
