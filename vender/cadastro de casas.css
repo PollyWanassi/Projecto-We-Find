@@ -58,12 +58,7 @@ form{
     background-color: white;
     border-radius: 20%;
     padding-bottom: 30px;
-
-    
-  
 }
-
-
 
 
 /*lado direito*/
@@ -83,10 +78,6 @@ option{
     gap: 1em;
     background: gray;
 }
-
-
-
-
 
 .campo-loc{
   min-width: 320px;
@@ -121,6 +112,16 @@ option{
 
 
 /* persolaização dos inputs*/
+
+label.iml{
+    width: 200px;
+    height: 20px;
+    background-color: #243038;
+}
+
+#inp-file1{
+    display: none;
+}
 
 h1{
     color: white;

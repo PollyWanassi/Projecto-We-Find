@@ -3,15 +3,16 @@ body{
     padding: 0;
     background-image: linear-gradient(330deg,#243038, #627a86);
     gap: 1.5rem;
-    margin-left: 14rem;
-    margin-top: 1rem;
-    margin-right: 12rem;
-    margin-bottom: 2rem;
+ 
 }
-.container{
-  max-width: 900px;
-  margin: auto;
+
+.pai{
+    max-width: 100em;
+    min-width: 320px;
+    margin: auto;
 }
+
+
 nav{
     display: flex;
     flex-direction: row;
@@ -90,16 +91,16 @@ nav ul li a:hover{
 
 .container-categoria{
     margin: auto;
-    max-width:500px;
-    min-width: 270px;
-    max-height: 290px;
+    max-width:900px;
+    min-width: 320px;
+    max-height: 490px;
     min-height: 100px;
    /* border: 1px solid rgb(0, 0, 0);*/
     text-align: center;
     color: rgb(0, 0, 0);
     background-color: rgba(255, 255, 255, 0.562);
-    padding: 50px;
-    border-radius: 50px;
+    padding: 10px;
+    border-radius: 20px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -107,11 +108,15 @@ nav ul li a:hover{
 }
 .item{
     background-color: rgb(157, 185, 185);
-    border: 2px solid rgb(70, 70, 83);
+    border: 2px solid rgb(63, 63, 63);
     height:200px;
     width: 290px;
+}
 
-
+.container-categoria img{
+    width: 100%;
+    height: 100%;
+    object-fit:fill ;
 }
 
 .container-Destaques{
@@ -131,14 +136,11 @@ nav ul li a:hover{
 
 .container-Conteudo{
     margin: auto;
-    max-width:500px;
-    min-width: 320px;
-    max-height: 800px;
-    min-height: 900px;
+    width: 75%;
+    height: 1000px;
    /* border: 1px solid rgb(0, 0, 0);*/
     text-align: center;
     color: rgb(0, 0, 0);
     background-color: rgba(212, 207, 207, 0.562);
-    padding: 50px;
-    border-radius: 50px;
+    border-radius: 20px;
 }
