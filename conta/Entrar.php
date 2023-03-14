@@ -44,11 +44,11 @@
                 <img src="img/logo.png" alt="" class="go"></a>
                 <header class="lo">login</header>
 
-                 <form action="#">
+                <form action="testelogin.php" method="POST">
                         
 
                      <div class="fiel input-field">
-                     <input type="email" class="input" placeholder="Email" required>
+                     <input type="email" class="input" placeholder="Email ou Telefone" required>
                      </div>
 
                      <div class="fiel input-field">
