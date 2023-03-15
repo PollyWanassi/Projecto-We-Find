@@ -58,7 +58,7 @@ if(isset($_POST['submit']))
         <nav>
       
         <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="pag-principal/pag-principal.html">Home</a></li>
             <li><a href="#"></a></li>
             <!--<li><a href="#">Vender</a></li>
             <li><a href="#" >Carrinho</a></li>-->
