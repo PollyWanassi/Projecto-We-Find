@@ -1,4 +1,16 @@
-<!DOCTYPE html>
+<?php
+ session_start();
+
+ if((!isset($_SESSION['email']) == true) and (!isset($_session['senha']) == true))
+ {
+    unset($_SESSION['email']);
+    unset($_SESSION['senha']);
+    header('location:Entrar.php');
+ }
+$logado=$_SESSION['email'];
+ ?>
+ 
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,10 +29,9 @@
         <img src="img/logo.png" alt="logo">
         <nav>
           <ul class="navegacao">
-              <li><a href="#">Minha Conta</a><i class="fa-solid fa-cart-shopping"></i></li>
-                <li><a href="#">Loja</a></li>
-                <li><a href="#">Vender</a></li>
-                <li><a href="vender/cadastro de casa.html">Carrinho</a></li>
+              <li><a href="perfil_original.html">Perfil</a><i class="fa-solid fa-cart-shopping"></i></li>
+                <li><a href="cadastro de casas.html">Vender</a></li>
+                <li><a href="carrinho.html">Carrinho</a></li>
           </ul>
         </nav>
       </header>

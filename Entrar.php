@@ -28,7 +28,7 @@
         <nav>
       
         <ul>
-            <li><a href="pag-principal/pag-principal.html">Home</a></li>
+            <li><a href="Compras.html">Voltar</a></li>
             <!--<li><a href="#">Minha conta</a></li>
             <li><a href="#">Vender</a></li>-->
             <li><a href="#" ></a></li>
@@ -48,11 +48,11 @@
                         
 
                      <div class="fiel input-field">
-                     <input type="email" class="input" placeholder="Email ou Telefone" required>
+                     <input type="email" class="input" name="email"  placeholder="Email" required>
                      </div>
 
                      <div class="fiel input-field">
-                     <input type="password" class="password" placeholder="password" required>
+                     <input type="password" class="password" name= "senha" placeholder="password" required>
                      <i class="bx bx-hide eye-incon"></i>
                      </div>
 
@@ -60,9 +60,10 @@
                         <a href="#" class="forgot-pass">Esqueceu a Senha?</a>
                      </div>
 
-                     <div class="fiel button-field">
-                        <button>login</button>
-                     </div>
+                     <div class="field button-field">
+                     <button type="submit" name="submit" Value="enviar" >Login</button>
+                    </div>
+                     
                  </form>
 
                      <div class="form-link">

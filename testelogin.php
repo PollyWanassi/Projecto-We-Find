@@ -8,25 +8,29 @@ if(isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha'])
     $email=$_POST['email'];
     $senha=$_POST['senha'];
 
-    $sql="SELECT* FROM usarios WHERE email='$email' AND senha='$senha'";
+    //print_r($email);
+   // print_r($senha);
+
+    $sql="SELECT* FROM usario WHERE email = '$email' AND senha = '$senha'";
     
-    $result=$conexao->query($sql);
-    //print_r($result);
-   // print_r($sql);
+    $result = $conexao->query($sql);
+   // print_r($result);
+  // print_r($sql);
    if(mysqli_num_rows($result) < 1 )
    {
-   unset($_SESSION['email']);
-   unset($_SESSION['senha']);
-header('location:pag-principal/pag-principal.html');
-   }
+    echo 'Erro';
+ unset($_SESSION['email']);
+ unset($_SESSION['senha']);
+ header('Location: Entrar.php');
+ 
+  // }
+}
    else
    {
-    $_SESSION['email']=$email;
-    $_SESSION['senha']=$senha;
-header('location:pag-principal/pag-principal.html');
+   $_SESSION['email'] = $email;
+   $_SESSION['senha'] = $senha;
+header('Location: pag-principal.php');
    }
-}
-else{
-    header('location:pag-principal/pag-principal.html');
+
 }
 ?>
