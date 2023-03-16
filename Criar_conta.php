@@ -19,10 +19,6 @@ if(isset($_POST['submit']))
    $result=mysqli_query($conexao,"INSERT INTO usario(Nome,Sobrenome,Senha,Telefone,Email,Tipo_usuario) VALUES ( '$nome', '$sobrenome','$senha',
    '$telefone','$email','$tipo_usuario')"); 
 
-  
-
-
-
 
 }
 ?>

@@ -8,6 +8,8 @@
     header('location:Entrar.php');
  }
 $logado=$_SESSION['email'];
+
+$sql="SELECT * FROM imovel ORDER BY id DESC";
  ?>
  
  <!DOCTYPE html>
@@ -92,6 +94,7 @@ $logado=$_SESSION['email'];
 
           </div>
 
+
           <div class="navigation">
             <label class="barsl" for="slide1"></label>
             <label class="barsl" for="slide2"></label>
@@ -103,10 +106,24 @@ $logado=$_SESSION['email'];
           </div>
 
           <div class="barrades">
-            <h1></h1>
+            <h1> DISPONIVEIS</h1>
           </div>
 
-          <div class="conteudo"></div>
+          <div class="conteudo">
+
+       <!-- onde vai a tabela-->
+
+      <table> 
+
+      </table>
+
+           <p><h1>oi</h1></p>
+          </div>
+
+
+
+
+
           <div class="slogan" ></div>   
         </div>
     </main>

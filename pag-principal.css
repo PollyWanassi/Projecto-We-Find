@@ -173,20 +173,24 @@ main{
     min-width: 320px;
     height: 30px;
     background-color: rgb(255, 255, 255);
-    margin-bottom: 22px;
+    margin:  22px;
 }
 .barrades{
   flex-shrink: 4;
-  margin: auto;
   border-radius: 50px;
   max-width: 830px;
   min-width: 320px;
+  margin: auto;
   height: 30px;
   background-color: rgb(255, 255, 255);
-  margin-bottom: 16px;
+
 }
+
+
+
 .barranome, .barrades >h1{
   text-align: center;
+  
   
 }
 
@@ -300,11 +304,14 @@ margin-left: 0;
 
 /*div de conteudo*/
 .conteudo{
-  max-width: 735px;
+  max-width: 900px;
   height: 620px;
-  background-color: white;
+  background-color: grey;
 margin: auto;
-border-radius: 20px;
+border-radius: 10px;
+}
+.conteudo > h1 {
+  text-align: center;
 }
 
 /* css do footer*/
