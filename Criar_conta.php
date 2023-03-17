@@ -110,7 +110,7 @@ if(isset($_POST['submit']))
                      </div>
                      
                      <div class="form-link">
-                        <span>Fazer <a href="Login.php" class="link login-link">login</a></span>
+                        <span>Fazer <a href="Entrar.php" class="link login-link">login</a></span>
                      </div>
             </div>
         </div>

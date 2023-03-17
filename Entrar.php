@@ -67,7 +67,7 @@
                  </form>
 
                      <div class="form-link">
-                        <span>Já tem uma conta? <a href="Criar_conta.html" class="link singnup-link">Cadastrar</a></span>
+                        <span>Já tem uma conta? <a href="Criar_conta.php" class="link singnup-link">Cadastrar</a></span>
                      </div>
             </div>
         </div>
