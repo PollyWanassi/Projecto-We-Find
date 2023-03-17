@@ -1,5 +1,6 @@
 <?php
  session_start();
+ include_once('config.php');
 
  if((!isset($_SESSION['email']) == true) and (!isset($_session['senha']) == true))
  {
@@ -9,7 +10,13 @@
  }
 $logado=$_SESSION['email'];
 
+
 $sql="SELECT * FROM imovel ORDER BY id DESC";
+
+$result = $conexao->query($sql);
+
+//print_r($result);
+
  ?>
  
  <!DOCTYPE html>
@@ -18,12 +25,15 @@ $sql="SELECT * FROM imovel ORDER BY id DESC";
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <title>página-principal</title>
     <link rel="stylesheet" href="pag-principal.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"           integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
 </head>
 <body>
   
@@ -110,14 +120,53 @@ $sql="SELECT * FROM imovel ORDER BY id DESC";
           </div>
 
           <div class="conteudo">
+            <div>
 
-       <!-- onde vai a tabela-->
+          <table class="table text-white table-bg">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Fotos</th>
+      <th scope="col">Tipo</th>
+      <th scope="col">Preço</th>
+      <th scope="col">Provincia</th>
+      <th scope="col">Endereço</th>
+      <th scope="col">Opcção</th>
+    </tr>
+  </thead>
+  <tbody>
+   <?php
+   While($user_data=mysqli_fetch_assoc($result))
+   {
+    echo "<tr>";
+    echo "<td>". $user_data['id']."</td>";
+    echo "<td>". $user_data['fotos']."</td>";
+     echo "<td>". $user_data['tipo']."</td>";
+    echo "<td>". $user_data['preco']."</td>";
+    echo "<td>". $user_data['cidademunicipio']."</td>";
+    echo "<td>". $user_data['endereco']."</td>";
+    echo "<td>". $user_data['Pretende']."</td>";
+  
+    echo $btn_carrinho = "<td> 
+    <a class='btn' href='carrinho.html'>
+    <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-cart' viewBox='0 0 16 16'>
+  <path d='M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z'/>
+   </svg>
+    </a>
 
-      <table> 
+    </td>";
+    echo "</tr>";
+   }
+   function btn_carrinho(){
 
-      </table>
+   }
+   ?>
+  </tbody>
+</table>
 
-           <p><h1>oi</h1></p>
+    
+  </div>
+           
           </div>
 
 
