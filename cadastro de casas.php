@@ -2,13 +2,7 @@
 <?php
 if(isset($_POST['submit']))
 {
-   // print_r($_POST['tipo']);
-   // print_r($_POST['preco']);
-
-  // print_r($_POST['comentarios']);
-   //  print_r($_POST['endereco']);
-  // print_r($_POST['cidade']);
-  //print_r($_POST['alugar/vender']);
+   
   include_once('Config2.php');
   $tipo=$_POST['tipo'];
   $preco=$_POST['preco']; 
@@ -22,7 +16,7 @@ if(isset($_POST['submit']))
 
 
 
-   $result=mysqli_query($conexao,"INSERT INTO imovel(Tipo,Preco,Comentarios,Endereco,Cidademunicipio,Pretende,Fotos) VALUES ( '$tipo',
+   $result=mysqli_query($conexao,"INSERT INTO imovel(tipo,preco,comentarios,endereco,cidademunicipio,pretende,fotos) VALUES ( '$tipo',
    '$preco','$comentarios','$endereco','$cidademunicipio', '$Pretende', '$fotos')"); 
 
 
@@ -50,7 +44,7 @@ if(isset($_POST['submit']))
     </nav>
 </header>
     <h1 class="tit">REGISTRO DE CASAS</h1>
-        <form class="container" action="cadastro de casas.php" method="POST">
+        <form class="container" action="Config2.php" method="POST">
        
 <br>
             <div class="container-principal">
