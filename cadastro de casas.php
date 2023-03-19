@@ -22,6 +22,34 @@ if(isset($_POST['submit']))
 
 }
 ?>
+<?php
+if(isset($_FILES['arquivo'])){
+    $arquivo = $_FILES['arquivo']
+
+    if($arquivo['error'])
+     die("Falha ao enviar arquivo";)
+
+    if($arquivo(['size']) > 209715)
+     die("Arquivo muito grande!! Max:20MB")
+
+    $pata  "Documents\GitHub\Projecto-We-Find"
+    $nomeDoArquivo = $arquivo['name']
+    $novoNomeDoArquivo = uniqid();
+
+    if($extensão != "jpg" && $entensao !='png')
+    die(" Tipo de Arquivo não aceito");
+
+    $deu_certo = move_uploaded_file($arquivo["tmp_namr"]; $pasta . $novoNomeDoArquivo . "." .$extensao);
+    if($deu_certo)
+    echo "<p>Arquivo enviado com Sucesso! Para acessa-lo; clique aqui: <a href= \"arquivos/$novoNomeDoArquivo.$estensao\">Clique aqui.</a></p>"
+    else
+    echo "<p> Falha ao enviar arquivo </p>";
+
+
+
+
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">
