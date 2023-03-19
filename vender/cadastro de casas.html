@@ -19,18 +19,20 @@
         </ul>
     </nav>
 </header>
+
+
     <h1 class="tit">REGISTRO DE CASAS</h1>
         <form class="container" action="#" method="#">
        
-<br>
+
             <div class="container-principal">
                 <div class="select-container">
                   
                     <fieldset name="det">
                         <legend >Descrição</legend>
 
-                        <label for="ed">Tipo de Edificio</label>
-                        <select name="tipo-de-imovel" id="ed">
+                        <label for="Ed">Tipo de Edificio</label>
+                        <select name="ed" id="Ed">
                             <option value="Loja">Loja</option>
                             <option value="casa">Casa</option>
                             <option value="Fábrica">Vivenda</option>
@@ -61,12 +63,15 @@
                     </fieldset>
                     <fieldset class="campo-loc">
                         <legend>Localização</legend>
+
                         <label for="iprovincia">Província</label>
                         <input class="textinp" type="text" id="iprovincia" ><br>
+
                         <label for="imucipio">Municipio</label>
                         <input class="textinp" type="text" id="imucipio"><br>
+
                         <label for="ibairro">Bairro</label>
-                        <input class="textinp" type="text" id="ibairro">
+                        <input class="textinp" type="text" id="ibairro" >
                     </fieldset>
                         <br>
                         
@@ -78,9 +83,9 @@
 
                             <h3>Pretende</h3>
                             <label for="ivender">Vender
-                            <input class="rad-b" type="radio" name="alugar/vender" id="ivender" value="Vender"></label>
+                            <input class="rad-b" type="radio" name="pretende" id="pretende" value="Vender"></label>
                             <label for="ialugar">Alugar</label>
-                            <input class="rad-b" type="radio" name="alugar/vender" id="ialugar"value="Alugar">
+                            <input class="rad-b" type="radio" name="pretende" id="pretende"value="Alugar">
                                 <br>
                                 
                                 
@@ -88,13 +93,14 @@
                                 
                                 <label for="ipreco">Preço <input class="textinp" type="number" name="preço" id="ipreco"></label>
                                 <br>
-                                <br>
+                                
                                 <h3>Escolha 4 imagens da propriedade</h3>
                                 <label class="iml"for="inp-file1">Selecione uma imagem</label>
-                                <input id="inp-file1"type="file">
-                                <input id="inp-file2"type="file">
+                                <input id="inp-file1"type="file" >
+                                
+                                <!-- <input id="inp-file2"type="file">
                                 <input id="inp-file3"type="file">
-                                <input id="inp-file4"type="file">
+                                <input id="inp-file4"type="file"> -->
                         </div>
                         <br>
                 </div>         

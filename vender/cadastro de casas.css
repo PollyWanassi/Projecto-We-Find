@@ -46,6 +46,7 @@ nav a{
     margin: auto;
     border: solid 2px rgb(94, 70, 70);
     width: 75%;
+    height: 210px;
     background-color: rgb(235, 235, 238);
     text-align: center;
     color:#3e5361;
@@ -114,9 +115,11 @@ option{
 /* persolaização dos inputs*/
 
 label.iml{
-    width: 200px;
-    height: 20px;
+    padding: 4px;
     background-color: #243038;
+    color: white;
+    border-radius: 4px;
+    margin-bottom: 4px;
 }
 
 #inp-file1{
