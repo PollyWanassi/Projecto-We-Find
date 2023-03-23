@@ -1,0 +1,303 @@
+:root{
+    --cor1:#03254c;
+    --cor2:#1167b1;
+    --cor3:#187bcd;
+    --cor4:#2a9df4;
+    --light-cor4:#2a9df4;
+    --cor5:#d0efff;
+   }
+
+/*Google fonts - poppins*/
+@import url('https:/fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+/*nav bar*/
+.header{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 90rem;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+nav ul img{
+    color: white;
+
+    align-items: center;
+    height: 50px;
+    width: 30px;
+    border-radius: 50%;
+}
+nav a{
+    font-family: balans;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+    padding: 30px;
+}
+
+
+body{
+    background-image:linear-gradient(330deg, #243038, #627a86)
+}
+
+
+/*========== Formulario Criar conta ========*/
+.container{
+    margin-top: 3rem;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.form{
+    position: absolute;
+    max-width: 430px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    background: white;  
+}
+.lo{
+    font-family: balans;
+    font-size: 28px;
+    font-weight: 600;
+    color: #03254c;
+    text-align: center;
+}
+form{
+    margin-top: 30px;
+}
+
+.form .field{
+    color: white;
+    height: 40px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 30px;
+}
+.field input{
+    background:lightgray;
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 30px;
+}
+.field button{
+    height: 100%;
+    width: 60%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 30px;
+    position: relative;
+    left: 5rem;
+}
+.field input{
+    outline: none;
+    padding: 0 15px;
+    border: 1px solid#CACACA;
+}
+.field input:focus{
+    border-bottom-width: 2px;
+}
+
+h5{
+    text-align: center;
+    font-family: balans;
+    color: #243038;
+}
+label{
+    font-family: apercu pro;
+    color: gray;
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;  
+    background-color: lightgray;
+    border-radius: 2em;
+    padding: 6px;
+    width: 200px;
+    margin-left: 4rem;
+}
+.rad-b{
+    margin-left: 2px;
+    cursor: pointer;
+}
+
+
+
+.eye-icon{
+    position: absolute;
+    font-size: 18px;
+    color: black;
+    top: 82.8%;
+    right: 15px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 5px;
+    justify-content: space-around;
+}
+.field button{
+    font-family: balans;
+    color: white;
+    background-color: #46565d;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.field button:hover{
+    background-color: gray;
+}
+.form-link{
+    text-align: center;
+    margin-top: 10px;
+}
+.form-link span, .form-link a{
+    font-family:  apercu pro;
+    font-size: 14px;
+    font-weight: 400;
+    color: #03254c;
+}
+.form a{
+    font-family:  apercu pro;
+    color: #46565d;
+    text-decoration: none;
+}
+.form-content a:hover{
+    text-decoration: underline;
+}
+
+/*========== Formulario Criar conta ========*/
+
+.contain{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.form .fiel{
+    color: white;
+    height: 50px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 30px;
+}
+.fiel input{
+    background:lightgray;
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 30px;
+}
+.fiel button{
+    height: 100%;
+    width: 60%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 30px;
+    position: relative;
+    left: 5rem;
+}
+.fiel input{
+    outline: none;
+    padding: 0 15px;
+    border: 1px solid#CACACA;
+}
+.fiel input:focus{
+    border-bottom-width: 2px;
+}
+.fiel button{
+    font-family: balans;
+    color: white;
+    background-color: #46565d;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.fiel button:hover{
+    background-color: gray;
+}
+.eye-incon{
+    position: absolute;
+    font-size: 18px;
+    color: black;
+    top: 63.3%;
+    right: 15px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 5px;
+    justify-content: space-around;
+}
+
+
+/*====== Imagem =====*/
+.go
+{
+    background:linear-gradient(330deg, #243038, #627a86);
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    left: 9.5rem;
+}
+/*===== Medida ====*/
+@media screen and (max-width: 1000px){
+    .form{
+        padding: 15px 10px;
+    }
+    .container{
+        position: relative;
+        margin-top: 12vh;
+    }
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 5px;
+
+    border-radius: 10px;
+  }
+  
+  th, td {
+    text-align: center;
+    padding: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color:  #243038;
+  }
+  
+  tr{
+    background-color:  gray;
+  }
+  
+  td {
+    font-weight: bold;
+    color:black;
+  }
+  
+  td:contains("Disponível") {
+    background-color: green;
+  }
+  
+  td:contains("Indisponível") {
+    background-color: red;
+  }
+  

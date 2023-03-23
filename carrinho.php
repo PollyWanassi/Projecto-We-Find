@@ -36,9 +36,9 @@
     echo "<td>". $user_data['fotos']."</td>";
      echo "<td>". $user_data['tipo']."</td>";
     echo "<td>". $user_data['preco']."</td>";
-  
+    echo "<td>". $user_data['cidademunicipio']."</td>";
     echo "<td>". $user_data['endereco']."</td>";
-
+    echo "<td>". $user_data['Pretende']."</td>";
     echo "</tr>";
   }
   
