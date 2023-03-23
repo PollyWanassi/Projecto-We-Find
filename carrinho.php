@@ -22,10 +22,27 @@
                 <tr>
                   <th>Propriedade</th>
                   <th>Preço</th>
-                
                   <th>Total</th>
                   <th>-</th>
                 </tr>
+                <?php
+                 include_once('config2.php');
+                 $result = mysqli_query($conexao, "SELECT * FROM imovel");
+                
+                 While($user_data=mysqli_fetch_assoc($result))
+   {
+    echo "<tr>";
+    echo "<td>". $user_data['id']."</td>";
+    echo "<td>". $user_data['fotos']."</td>";
+     echo "<td>". $user_data['tipo']."</td>";
+    echo "<td>". $user_data['preco']."</td>";
+    echo "<td>". $user_data['cidademunicipio']."</td>";
+    echo "<td>". $user_data['endereco']."</td>";
+    echo "<td>". $user_data['Pretende']."</td>";
+    echo "</tr>";
+  }
+  
+                ?>
               </thead>
               <tbody>
               
