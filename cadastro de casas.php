@@ -16,40 +16,52 @@ if(isset($_POST['submit']))
    $endereco=$_POST['endereco'];
    $cidademunicipio=$_POST['cidademunicipio'];
    $Pretende=$_POST['pretende'];
-   $fotos=$_POST['fotos'];
+  // $fotos=$_POST['fotos'];
    
 
 
 
 
-   $result=mysqli_query($conexao,"INSERT INTO imovel(Tipo,Preco,Comentarios,Endereco,Cidademunicipio,Pretende,Fotos) VALUES ( '$tipo',
-   '$preco','$comentarios','$endereco','$cidademunicipio', '$Pretende', '$fotos')"); 
+  // $result=mysqli_query($conexao,"INSERT INTO imovel(Tipo,Preco,Comentarios,Endereco,Cidademunicipio,Pretende,fotos, nome) VALUES ( '$tipo',
+  // '$preco','$comentarios','$endereco','$cidademunicipio', '$Pretende', '$path','$nomeDoArquivo')"); 
 
 
 }
-?>
-<?php
-if(isset($_FILES['arquivo'])){
-    $arquivo = $_FILES['arquivo']
 
-    if($arquivo['error'])
-     die("Falha ao enviar arquivo";)
+session_start(); 
+include_once('Config2.php'); 
 
-    if($arquivo(['size']) > 209715)
-     die("Arquivo muito grande!! Max:20MB")
+if(isset($_FILES['fotos'])){
+    $fotos = $_FILES['fotos'];
+   // var_dump($_FILES['fotos']);
 
-    $pata  "Documents\GitHub\Projecto-We-Find"
-    $nomeDoArquivo = $arquivo['name']
-    $novoNomeDoArquivo = uniqid();
+   if($fotos['error'])
+    die("Falha ao enviar arquivo");
 
-    if($extensão != "jpg" && $entensao !='png')
-    die(" Tipo de Arquivo não aceito");
+    if($fotos['size'] > 2097152)
+     die("Arquivo muito grande!! Max:2MB");
 
-    $deu_certo = move_uploaded_file($arquivo["tmp_namr"]; $pasta . $novoNomeDoArquivo . "." .$extensao);
-    if($deu_certo)
-    echo "<p>Arquivo enviado com Sucesso! Para acessa-lo; clique aqui: <a href= \"arquivos/$novoNomeDoArquivo.$estensao\">Clique aqui.</a></p>"
-    else
-    echo "<p> Falha ao enviar arquivo </p>";
+   $pasta="Fotos/";
+  $nomeDoArquivo = $fotos['name'];
+   $novoNomeDoArquivo = uniqid();
+   $extensao= strtolower(pathinfo($nomeDoArquivo, PATHINFO_EXTENSION));
+
+    if($extensao != "jpg" && $extensao !='png'&& $extensao != "jpeg")
+   die(" Tipo de Arquivo não aceito");
+
+    $path= $pasta . $novoNomeDoArquivo . "." .$extensao;
+    $deu_certo = move_uploaded_file($fotos["tmp_name"], $pasta . $novoNomeDoArquivo . "." .$extensao);
+   // if($deu_certo) {
+      // $mysqli->query("INSERT INTO imovel(fotos, nome) VALUES ( '$path','$nomeDoArquivo')") or die($mysqli->error);  
+
+    
+  // echo "<p>Arquivo enviado com Sucesso! Para acessa-lo; clique aqui: <a target=\"_blank\" href=\"Fotos/$novoNomeDoArquivo.$extensao\">Clique aqui.</a></p>";
+   // }
+  // else
+   // echo "<p> Falha ao enviar arquivo </p>";
+    
+   $result=mysqli_query($conexao,"INSERT INTO imovel(Tipo,Preco,Comentarios,Endereco,Cidademunicipio,Pretende,fotos, nome) VALUES ( '$tipo',
+   '$preco','$comentarios','$endereco','$cidademunicipio', '$Pretende', '$path','$nomeDoArquivo')"); 
 
 
 
@@ -68,6 +80,7 @@ if(isset($_FILES['arquivo'])){
 
 </head>
 <body>
+
     <header>
         <img src="img/logo.png" width="55px" height="55px" alt="logo">
         <nav>
@@ -78,7 +91,7 @@ if(isset($_FILES['arquivo'])){
     </nav>
 </header>
     <h1 class="tit">REGISTRO DE CASAS</h1>
-        <form class="container" action="cadastro de casas.php" method="POST">
+        <form class="container" enctype="multipart/form-data" action="" method="POST">
        
 <br>
             <div class="container-principal">

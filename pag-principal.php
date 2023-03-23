@@ -116,7 +116,7 @@ $result = $conexao->query($sql);
           </div>
 
           <div class="barrades">
-            <h1> DISPONIVEIS</h1>
+            <h1> Exposição dos Imoveis</h1>
           </div>
 
           <div class="conteudo">
@@ -125,58 +125,51 @@ $result = $conexao->query($sql);
           <table class="table text-white table-bg">
   <thead>
     <tr>
-      <th scope="col">ID</th>
-      <th scope="col">Fotos</th>
-      <th scope="col">Tipo</th>
-      <th scope="col">Preço</th>
-      <th scope="col">Provincia</th>
-      <th scope="col">Endereço</th>
-      <th scope="col">Opcção</th>
+      <th scope="col">  </th>
+      <th scope="col">  </th>
+      <th scope="col">  </th>
+      <th scope="col">  </th>
+      <th scope="col">  </th>
+      <th scope="col">  </th>
+      <th scope="col"> </th>
     </tr>
   </thead>
   <tbody>
+ 
    <?php
  While($user_data=mysqli_fetch_assoc($result))
    {
-    echo "<tr>";
-    echo "<td>". $user_data['id']."</td>";
-    echo "<td>". $user_data['fotos']."</td>";
-     echo "<td>". $user_data['tipo']."</td>";
-    echo "<td>". $user_data['preco']."</td>";
-    echo "<td>". $user_data['cidademunicipio']."</td>";
-    echo "<td>". $user_data['endereco']."</td>";
-    echo "<td>". $user_data['Pretende']."</td>";
+    ?>
+    <tr>
+     <td><img height="200" src="<?php echo $user_data ['fotos']?>"></td>
+     <td><?php echo $user_data ['tipo']?></td>
+    <td><?php echo $user_data ['preco']?></td>
+    <td><?php echo $user_data ['cidademunicipio']?></td>
+    <td><?php echo $user_data ['endereco']?></td>
+    <td><?php echo $user_data ['Pretende']?></td>
   
-    echo "<td> 
+    <td> 
     <a class='btn' name='btn' href='carrinho.html'>
     <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-cart' viewBox='0 0 16 16'>
   <path d='M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z'/>
    </svg>
     </a>
 
-    </td>";
-    echo "</tr>";
-   }
-    
-   if(isset($_POST['btn'])){
-    While($user_data=mysqli_fetch_assoc($result))
-    echo $result;
-   {
-    echo "<tr>";
-    echo "<td>". $user_data['id']."</td>";
-    echo "<td>". $user_data['fotos']."</td>";
-     echo "<td>". $user_data['tipo']."</td>";
-    echo "<td>". $user_data['preco']."</td>";
-    echo "<td>". $user_data['cidademunicipio']."</td>";
-    echo "<td>". $user_data['endereco']."</td>";
-    echo "<td>". $user_data['Pretende']."</td>";
-    echo "</tr>";
-   }
+    </td>
+   </tr>
+
+    <?php
    }
 
+  
    ?>
+   
+
   </tbody>
 </table>
+
+
+
 
     
   </div>
@@ -217,3 +210,5 @@ $result = $conexao->query($sql);
     </footer>
 </body>
 </html>
+
+
