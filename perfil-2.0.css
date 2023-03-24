@@ -32,6 +32,9 @@ nav{
     cursor: pointer;
     margin-left: 30px;
 }
+span{
+    margin-left: 8rem;
+}
 nav .nav-lists{
     width: 100%;
     text-align: right;
@@ -108,7 +111,14 @@ nav .nav-lists li a{
     padding: 8px;
     margin-right: 15px;
 }
+
 .sub-menu-link button{
+    border: 0 solid white;
+   background-color: white;
+    /* padding: 0;
+    width: 0;
+    height: 0;
+    margin-top: -28px;*/
     font-family:  apercu pro;
     font-size: 22px;
     transition: transform 0.5s;
@@ -130,7 +140,7 @@ nav .nav-lists li a{
     justify-content: center;
     color: white;
     margin-top: 9rem;
-    
+    font-weight: 500;
 }
 .form{
     position: absolute;
@@ -149,7 +159,7 @@ nav .nav-lists li a{
     -webkit-backdrop-filter: blur(6.5px);
 }*/
 .lock-user{
-    margin-top: -21.3rem;
+    margin-top: -21rem;
     margin-right: 31.3rem;
     background: white;
     padding: 20px;
@@ -160,8 +170,8 @@ nav .nav-lists li a{
     -webkit-backdrop-filter: blur(6.5px);
 }
 .lock-user1{
-    margin-top: -22.6rem;
-    margin-right: 31.3rem;
+    margin-top: -22.3rem;
+    margin-right: 31rem;
     background: white;
     padding: 20px;
     background: rgba(255,255,255,0.21);
@@ -185,7 +195,7 @@ nav .nav-lists li a{
     margin-top: 0.3rem;
     font-family: balans;
     font-size: 28px;
-    font-weight: 600;
+    font-weight: 500;
     color: #46565d;
     text-align: center;
 }
@@ -219,7 +229,7 @@ form{
     margin-left: 15px;
     text-transform: uppercase;
     text-align: left;
-    font-weight: 600;
+    font-weight: 550;
 }
 .perfil h5{
     font-family: apercu pro;
@@ -227,7 +237,7 @@ form{
     color: #46565d;
     margin-left: -3rem;
     font-size: 1.5rem;
-    font-weight: 300;
+    font-weight: 500;
     margin-top: -1.5rem;
 }
 .field button{
@@ -236,7 +246,7 @@ form{
     width: 50%;
     border: none;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
     border-radius: 30px;
     position: relative;
     left: 6.7rem;
