@@ -119,21 +119,24 @@ $result = $conexao->query($sql);
             <h1> DISPONIVEIS</h1>
           </div>
 
-          <div class="conteudo">
-            <div>
 
-          <table class="table text-white table-bg">
-  <thead>
-    <tr>
-      <th scope="col">ID</th>
-      <th scope="col">Fotos</th>
-      <th scope="col">Tipo</th>
-      <th scope="col">Preço</th>
-      <th scope="col">Provincia</th>
-      <th scope="col">Endereço</th>
-      <th scope="col">Opcção</th>
-    </tr>
-  </thead>
+
+          <div class="conteudo">
+           
+          
+            <div>
+              <table class="table text-white table-bg">
+               <thead>
+               <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">Fotos</th>
+                  <th scope="col">Tipo</th>
+                  <th scope="col">Preço</th>
+                  <th scope="col">Provincia</th>
+                  <th scope="col">Endereço</th>
+                 <th scope="col">Opcção</th>
+               </tr>
+             </thead>
   <tbody>
    <?php
  While($user_data=mysqli_fetch_assoc($result))
