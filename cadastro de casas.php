@@ -16,7 +16,7 @@ if(isset($_POST['submit']))
 
 
 
-<<<<<<< HEAD
+
   // $result=mysqli_query($conexao,"INSERT INTO imovel(Tipo,Preco,Comentarios,Endereco,Cidademunicipio,Pretende,fotos, nome) VALUES ( '$tipo',
   // '$preco','$comentarios','$endereco','$cidademunicipio', '$Pretende', '$path','$nomeDoArquivo')"); 
 
@@ -58,21 +58,11 @@ if(isset($_FILES['fotos'])){
    $result=mysqli_query($conexao,"INSERT INTO imovel(Tipo,Preco,Comentarios,Endereco,Cidademunicipio,Pretende,fotos, nome) VALUES ( '$tipo',
    '$preco','$comentarios','$endereco','$cidademunicipio', '$Pretende', '$path','$nomeDoArquivo')"); 
 
-
-
-
-}
-?>
-=======
-   $result=mysqli_query($conexao,"INSERT INTO imovel(tipo,preco,comentarios,endereco,cidademunicipio,pretende,fotos) VALUES ( '$tipo',
-   '$preco','$comentarios','$endereco','$cidademunicipio', '$Pretende', '$fotos')"); 
-
+//$result=mysqli_query($conexao,"INSERT INTO imovel(tipo,preco,comentarios,endereco,cidademunicipio,pretende,fotos) VALUES ( '$tipo',
+//'$preco','$comentarios','$endereco','$cidademunicipio', '$Pretende', '$fotos')"); 
 
 }
 ?>
-
->>>>>>> 28db576b16fbbfc0cb1f43384ae68014d775392d
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -95,11 +85,11 @@ if(isset($_FILES['fotos'])){
     </nav>
 </header>
     <h1 class="tit">REGISTRO DE CASAS</h1>
-<<<<<<< HEAD
+
         <form class="container" enctype="multipart/form-data" action="" method="POST">
-=======
+
         <form class="container" action="Config2.php" method="POST">
->>>>>>> 28db576b16fbbfc0cb1f43384ae68014d775392d
+
        
 <br>
             <div class="container-principal">
