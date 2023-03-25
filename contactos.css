@@ -7,11 +7,15 @@ body{
     margin-top: 1rem;
     margin-right: 18rem;
     margin-bottom: 2rem;
+    min-height: 100vh;
+
+    
 }
 .container{
   max-width: 600px;
   margin: auto;
   padding: 1rem;
+    
 }
 .logo{
     margin-right: 8rem;
@@ -44,6 +48,7 @@ nav ul li a:hover{
 }
 
 .container{
+
     margin-top: 2rem;
     width: 80%;
     background-color: #fff;
@@ -52,11 +57,13 @@ nav ul li a:hover{
     box-shadow: 0 5px 10px rgb(0, 0, 0);
 }
 .container .content{
+
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 .container .content .left-side{
+
     width: 25%;
     display: flex;
     flex-direction: column;
@@ -74,11 +81,12 @@ nav ul li a:hover{
     right: -15px;
     top: 50%;
     transform: translateY(-50%);
-    background: #ff0000; 
+
 }
 .content .left-side .details{
     margin: 14px;
     text-align: center;
+    
     
 }
 .content .left-side .details i{
@@ -94,6 +102,7 @@ nav ul li a:hover{
 .content .left-side .details .text-two{
     font-size: 14px;
     color: rgb(0, 0, 0);
+
 }
 
 
@@ -106,43 +115,8 @@ nav ul li a:hover{
     font-weight: 600;
     color: #4b4848;
 }
-.right-side .input-box{
-    height: 50px;
-    width: 100%;
-    margin: 12px 0;
-}
-.right-side .input-box input,
-.right-side .input-box textarea{
-    height: 100%;
-    width: 100%;
-    border: none;
-    font-size: 16px;
-    font-weight: 500;
-    background: rgb(172, 171, 168);
-    border-radius: 6px;
-    padding: 0 15px;
-}
-.right-side .massage-box{
-    min-height: 110px;
-    margin-top: 6px;
-}
-.right-side .button{
-    display:inline-block;
-    margin-top: 6px;
-}
-.right-side .button input[type="button"]{
-    color: #fff;
-    font-size: 18px;
-    outline: none;
-    border: none;
-    padding: 10px 16px;
-    border-radius: 6px;
-    background: rgb(4, 4, 107);
-    cursor: pointer;
-}
-.button input[type="button"]:hover{
-    background: rgb(0, 0, 0);
-}
+
+
 @media (max-width: 950px){
     .container{
         width: 90%;
