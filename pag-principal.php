@@ -6,7 +6,7 @@
  {
     unset($_SESSION['email']);
     unset($_SESSION['senha']);
-    header('location:Entrar.php');
+    header('Location:Entrar.php');
  }
 $logado=$_SESSION['email'];
 
