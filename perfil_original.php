@@ -45,28 +45,27 @@ $result = $conexao->query($sql);
             <li><a href="pag-principal.php">Voltar a página Inicial</a></li>
                 <li><a href="contactos.html">Contatos</a></li>
             <li><a href="sobre.html">Sobre Nós</a></li>
-                <li><a href=""> </a></li>
             </div>
-            <img src="img/user.jpg" alt="" class="user-pic" onclick="toggleMenu()">
+            <img src="img/bx+exit-1325051876009818850.png" alt="" class="user-pic" onclick="toggleMenu()">
     
             <div class="sub-menu-wrap" id="subMenu">
                 <div class="sub-menu">
 
-                   <!-- <div class="user-info">
-                        <img src="img/user.jpg">
-                       <--!-- <h2>Carlos Sissimo</h2>
+                    <div class="user-info">
+                        <img src="img/bx-exit.svg">
+                       <!-- <h2>Carlos Sissimo</h2>-->
 
                     <div class="user-info">
-                        <a href="#" class="sub-menu-link">
-                            <img src="bx-exit.svg" alt="">
+                        <a href="Sair.php" class="sub-menu-link">
+                            <img src="img/bx+exit-1325051876009818850.png" alt="">
                             <p>Logout</p>
                             <button><span>></span></button>
                         </a>
->
+
                     </div>
                      <hr>
     
-                    <a href="#" class="sub-menu-link">
+                   <!-- <a href="#" class="sub-menu-link">
                         <img src="bx-user.svg" alt="">
                         <p>Editar Perfil</p>
                         <button><span>></span></button>
