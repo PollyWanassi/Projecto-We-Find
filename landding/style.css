@@ -1,0 +1,199 @@
+
+@font-face{
+    font-family:'Balans';
+    src: url('/pj-we/Projecto-We-Find/assets/fonts/balans/Balans-Normal.ttf') format('trutype');
+    font-weight: normal;
+    font-style: normal;
+    
+    
+    }
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(135deg, #627a86 1%, #243038 100%);
+    ;
+    
+}
+header{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+    padding: 15px;
+}
+
+.pai{
+    margin: auto;
+    min-height: 80vh
+}
+
+
+
+
+
+.cont-e{
+    width: 60px;
+    border-top: #243038 2px solid;
+    border-left: #243038 2px solid;
+    position: absolute;
+}
+
+.categoria-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1300px;
+}
+.categoria-cont >h1{
+    text-align: center;
+    color: white;
+   
+}
+
+.categoria{
+
+   
+    max-width: 900px;
+    height: 250px;
+
+    margin-top: 10px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+    
+}
+
+.cat1{
+    border-radius: 8px;
+    width: 30%;
+    height: 100%;
+
+}
+.cat2{
+    width: 30%;
+    height: 100%;
+
+}
+.cat3{
+    width: 30%;
+    height: 100%;
+
+}
+.cat1 img{
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    object-fit:fill ;
+}
+.cat2 img{
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    object-fit:fill ;
+}
+.cat3 img{
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    object-fit:fill ;
+}
+
+
+
+
+.cont-di{
+   
+    display: flex;
+    flex-direction: row;
+   /* justify-content: space-between;*/
+   justify-content: center;
+
+
+   
+}
+
+.les{
+    color: white;
+    width: 60px;
+    height: 280px;
+    
+}
+.les > h1{
+    font-size: 2.5rem;
+    margin: 0;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    padding-top: 0;
+    text-align: center;
+    padding-top: 3px;
+    padding-left: 7px;
+
+}
+
+.cima{ 
+    padding-top: 67px;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+
+    max-width: 380px;
+    z-index: 3;
+}
+
+img.marma{
+ 
+    max-width: 400px;
+  
+}
+
+
+
+h1{
+
+    font-size: 30px;
+
+}
+p{
+    font-size: 15px;
+}
+
+/*footer*/
+footer{
+    color: white;
+
+}
+.bl{
+    height: 200px;
+    width: 200px;
+}
+
+.container-footer{
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+    max-height: 450px;
+    max-width: 80rem;
+    display: grid;
+    grid-template-columns: repeat(2,300px);
+    gap: 8px;
+}
+.sec1  {
+    padding-left: 20px;
+}

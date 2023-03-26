@@ -1,0 +1,112 @@
+
+
+
+
+
+
+
+
+.conteiner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1000px;
+    min-height: 100px;
+    margin: 10px;
+    border: .1rem solid rgba(0,0,0,.2);
+    box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    overflow: hidden;
+    background: white;
+    flex: 1 1 30rem;
+}
+
+.image-conteiner{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 18rem;
+}
+.image-conteiner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+.container .right_Side{
+    position: relative;
+    background: white;
+    padding: 40px;
+}
+.about{
+    margin-bottom: 50px;
+}
+.about:last-child{
+    margin-bottom: 0;
+}
+.title2{
+    font-family: 'balans';
+    font-weight: 500;
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+/*.title3{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    font-size: 20px;
+    margin-left: 2rem;
+}*/
+.about .box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.about .box .year_company{
+    min-width: 170px;
+    margin-left: 2rem;
+}
+.about .box .year_company h5{
+    font-family: 'balans';
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #848c90;
+}
+.about .box .text h4{
+    font-family: 'apercu pro';
+    text-transform: uppercase;
+    color: #2a7da2;
+    font-size: 15px;
+}
+p{
+    font-family: apercu pro;
+}
+
+
+
+/*=========  Barra de pesquisa  ========*/
+
+.search-box{
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+    background: #efefef;
+    width: 350px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+.search-box img{
+    width: 18px;
+}
+.search-box input{
+    width: 100%;
+    background: transparent;
+    padding: 10px;
+    outline: none;
+    border: 0;
+}

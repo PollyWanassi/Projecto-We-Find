@@ -47,22 +47,31 @@ $result = $conexao->query($sql);
             <li><a href="sobre.html">Sobre Nós</a></li>
                 <li><a href=""> </a></li>
             </div>
-            <img src="img/transferir.jpg" alt="" class="user-pic" onclick="toggleMenu()">
+            <img src="img/user.jpg" alt="" class="user-pic" onclick="toggleMenu()">
     
             <div class="sub-menu-wrap" id="subMenu">
                 <div class="sub-menu">
+
                    <!-- <div class="user-info">
                         <img src="img/user.jpg">
                        <--!-- <h2>Carlos Sissimo</h2>
+
+                    <div class="user-info">
+                        <a href="#" class="sub-menu-link">
+                            <img src="bx-exit.svg" alt="">
+                            <p>Logout</p>
+                            <button><span>></span></button>
+                        </a>
+>
                     </div>
-                    <hr>
+                     <hr>
     
                     <a href="#" class="sub-menu-link">
                         <img src="bx-user.svg" alt="">
                         <p>Editar Perfil</p>
                         <button><span>></span></button>
                     </a>
-                    <a href="#" class="sub-menu-link">
+                   <a href="#" class="sub-menu-link">
                         <img src="bx-cog.svg" alt="">
                         <p>Settings & Privacy</p>
                         <span>></span>
@@ -71,12 +80,12 @@ $result = $conexao->query($sql);
                         <img src="bx-help-circle.svg" alt="">
                         <p>Help & Support</p>
                         <span>></span>
-                    </a>-->
-                    <a href="Sair.php" class="sub-menu-link">
-                        <img src="img/transferir.jpg" alt="">
-                        <p>Logout</p>
-                        <button><span >></span></button>
                     </a>
+                    <a href="#" class="sub-menu-link">
+                        <img src="bx-exit.svg" alt="">
+                        <p>Logout</p>
+                        <button><span>></span></button>
+                    </a>-->
     
     
                 </div>
@@ -104,11 +113,11 @@ $result = $conexao->query($sql);
                 <br>
                 <br>
     
-                <a href="Segurança.html" class="lock">
+                <!--<a href="Segurança.html" class="lock">
     
                     <img src="bx-lock.svg" alt="">
     
-                </a>
+                </a>-->
     
             </div>
     

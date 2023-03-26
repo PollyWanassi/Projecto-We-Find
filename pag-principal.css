@@ -10,7 +10,9 @@
 }
 
 html{
- 
+
+  font-family: 'balans';
+
   font-size: 62.5%;
 
 }
@@ -166,6 +168,7 @@ main{
 
  /* barras, ainda precisa de centralizar os h1*/
 }
+
 /*.barranome{  
     padding: 20px 0 20px 0;
     flex-shrink: 4;
@@ -177,6 +180,18 @@ main{
     background-color: rgb(255, 255, 255);
    
 }*/
+
+.barranome{
+  flex-shrink: 4;
+  border-radius: 50px;
+  max-width: 830px;
+  min-width: 320px;
+  margin: auto;
+  height: 30px;
+  background-color: rgb(255, 255, 255);
+}
+
+
 .barrades{
  
 
@@ -192,9 +207,11 @@ main{
   max-width: 830px;
   min-width: 320px;
   text-align: center;
+
  font-family: "balans";
  font-weight: 500;
   margin: auto;
+
 
 }
 
@@ -314,6 +331,61 @@ border-radius: 10px;
   text-align: center;
 }
 
+
+
+
+/*card de conteudo*/
+.card{
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 2px 2px #00000094;
+  width: 800px;
+
+}
+.mediacard{
+  background: url(/pj-we/Projecto-We-Find/imgpagg/luanda-13.jpg) center/cover;
+
+  height: 250px;
+  width: 100%;
+ 
+}
+.bottomcard{
+  max-width: 800px;
+}
+.lista {
+   display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+   gap: 16px;
+  color: rgb(125, 59, 156);
+  font-size: 16px;
+  font-weight: 450;
+}
+/* Aqui temos os textos do card*/
+.title{
+  color: #2b3d59;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.secondtext{
+  color: #828fa1;
+}
+
+.bottomtext{
+  color: #445b73;
+  font-size: 14px;
+  font-family:"raleway";
+  font-weight: 500;
+}
+
+.topcard{
+  padding: 10px;
+  padding-top: 0px;
+}
+.bottomcard{
+  padding: 10px;
+}
 
 
 /* css do footer*/

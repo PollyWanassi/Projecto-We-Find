@@ -108,13 +108,19 @@ $result = $conexao->query($sql);
             <h1> Exposição dos Imoveis</h1>
           </div>
 
+
           <div class="conteudo">
           
            <!--Card-->
 
            <div class="content"> 
-           <?php
- while($user_data=mysqli_fetch_assoc($result))
+    
+              
+                    
+  
+   <?php
+ While($user_data=mysqli_fetch_assoc($result))
+
    {
     ?>
             <div class="card">
@@ -160,7 +166,9 @@ $result = $conexao->query($sql);
            <!--Card-->
           </div>
           <div class="slogan" ></div>   
+
         </div>
+
     </main>
     <footer >
       <div class=" container-footer" >

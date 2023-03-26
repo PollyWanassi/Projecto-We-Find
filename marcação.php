@@ -3,14 +3,13 @@ if(isset($_POST['submit']))
 {
   
    include_once('config.php');
-   $nome=$_POST['nome'];
-   $telefone=$_POST['telefone'];
-   $email=$_POST['email'];
-  
+   $dia=$_POST['dia'];
+   $hora=$_POST['hora'];
+   
 
 
-   $result=mysqli_query($conexao,"INSERT INTO marcacao(Nome,Telefone,Email) VALUES ( '$nome',
-   '$telefone','$email')"); 
+   $result=mysqli_query($conexao,"INSERT INTO marcacao(dia,hora) VALUES ( '$dia',
+   '$hora')"); 
 
 
 }
@@ -51,8 +50,7 @@ if(isset($_POST['submit']))
             <li><a href="contactos.html">Contatos</a></li>
             <li><a href="sobre.html">Sobre Nós</a></li>
             <li><a href="#"></a></li>
-            <!--<li><a href="#">Vender</a></li>
-            <li><a href="#" >Carrinho</a></li>-->
+            
         </ul>
     </nav>
 
@@ -67,16 +65,12 @@ if(isset($_POST['submit']))
                 <form action="marcação.php" method="POST">
 
                     <div class="field input-field">
-                     <input type="text" class="input"  id="Nome" name="nome" placeholder="Nome completo" required>
+                     <input type="date" class="input"  id="nome" name="dia" placeholder="data" required>
                      </div>
                      
                      <div class="field input-field">
-                        <input type="tel" class="input"  id="Telefone" name="telefone" placeholder="Telefone" required>
+                        <input type="time" class="input"  id="tel" name="hora" placeholder="hora" required>
                         </div>
-
-                     <div class="field input-field">
-                     <input type="email" class="input"  id="Email" name="email" placeholder="Email" required>
-                     </div>
          
                      <h1>Disponibilidade</h1>
     <table>
