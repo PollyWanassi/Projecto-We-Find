@@ -105,6 +105,9 @@ nav ul li a:hover{
 
 }
 
+p{
+    font-family: "roboto";
+}
 
 .container .content .right-side{
     width: 75%;
