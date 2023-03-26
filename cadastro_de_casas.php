@@ -70,7 +70,7 @@ if(isset($_FILES['fotos'])){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="cadastro de casas.css">
+    <link rel="stylesheet" href="cadastrodecasas.css">
 
 </head>
 <body>
@@ -81,6 +81,8 @@ if(isset($_FILES['fotos'])){
       
         <ul>
             <li><a href="pag-principal.php">Voltar a Página inicial</a></li>
+            <li><a href="contactos.html">Contatos</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
         </ul>
     </nav>
 </header>
@@ -101,9 +103,9 @@ if(isset($_FILES['fotos'])){
                         <label for="ed">Tipo de Edificio</label>
                         <select name="tipo" id="Tipo">
                             <option value="Loja">Loja</option>
-                            <option value="casa">Casa</option>
+                            <option value="casa">Predio</option>
                             <option value="Vivenda">Vivenda</option>
-                            <option value="Fábrica">Fábrica</option>
+                            <option value="Vivenda">Terreno</option>
                         </select>
 
                        
@@ -113,11 +115,11 @@ if(isset($_FILES['fotos'])){
                     <fieldset class="campo-loc">
                         <legend>Localização</legend>
                         <label for="iprovincia">Localização</label>
-                        <input class="textinp" type="text" name="cidademunicipio" id="iprovincia"  placeholder="Provincia, municipio e Bairro" ><br>
+                        <input class="textinp" type="text" name="cidademunicipio" id="iprovincia"  placeholder="Provincia ou Munícipio" ><br>
                        <!-- <label for="imucipio">Municipio</label>
                         <input class="textinp" type="text" name="cidade" id="imucipio"><br>-->
                         <label for="ibairro">Endereço</label>
-                        <input class="textinp" type="text" name="endereco" id="Bairro">
+                        <input class="textinp" type="text" name="endereco" id="Bairro"placeholder="Endereço" >
                     </fieldset>
                         <br>
                         

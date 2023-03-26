@@ -80,28 +80,41 @@ $result = $conexao->query($sql);
          <input type="radio" name="slide" id="slide1" checked>
          <input type="radio" name="slide" id="slide2">
          <input type="radio" name="slide" id="slide3">
-        
+         <input type="radio" name="slide" id="slide4">
+         <input type="radio" name="slide" id="slide5">
 
               <div class="slide s1">
-                <img src="img/336659004_1559987487857189_1843217898508610978_n.jpg" alt="casa1">
+                <img src="img/luanda-11.jpg" alt="casa1">
               </div>
 
               <div class="slide s2">
-                <img src="img/angola-luanda-ocean-corner-1024x683.jpg" alt="casa2">
+                <img src="img/luanda-13.jpg" alt="casa2">
               </div>
 
               <div class="slide s3">
-                <img src="img/loja-em-projeto-nova-vida-segunda-fase.-big-23510.jpg" alt="casa3">
+                <img src="img/luanda-15.jpg" alt="casa3">
               </div>
 
-           
+              <div class="slide s3">
+                <img src="img/luanda-17.jpg" alt="casa4">
+              </div>
+
+              <div class="slide s3">
+                <img src="img/luanda-24.jpg" alt="casa5">
+              </div>
+
+
           </div>
+
+
           <div class="navigation">
             <label class="barsl" for="slide1"></label>
             <label class="barsl" for="slide2"></label>
             <label class="barsl" for="slide3"></label>
-            
+            <label class="barsl" for="slide4"></label>
+            <label class="barsl" for="slide5"></label>
           </div>
+
           </div>
 
           <div class="barrades">
@@ -109,39 +122,51 @@ $result = $conexao->query($sql);
           </div>
 
           <div class="conteudo">
-          
-           <!--Card-->
+            
 
-           <div class="content"> 
-           <?php
- while($user_data=mysqli_fetch_assoc($result))
+          <table class=" table" color="blue">
+  <thead>
+    <tr>
+      <th scope="col">  </th>
+      <th scope="col">  </th>
+      <th scope="col">  </th>
+      <th scope="col">  </th>
+      <th scope="col">  </th>
+      <th scope="col">  </th>
+      <th scope="col"> </th>
+    </tr>
+  </thead>
+  <tbody>
+ 
+   <?php
+ While($user_data=mysqli_fetch_assoc($result))
    {
     ?>
-            <div class="card">
-               <div class="topcard"> 
-                <h2 class="title"> <?php echo $user_data ['tipo']?> </h2>
-               </div>
-                <div class="mediacard">
-                <img  height="250px" width="100%" src="<?php echo $user_data ['fotos']?>">
-                </div>
-                 <div class="bottomcard">
-                   <p class="bottomtext">DESCRIÇÃO:
-                     <?php echo $user_data ['comentarios']?> </p> 
-                   <p class="bottomtext"> </p> 
-                   <ul class="lista">
-                    <li> <?php echo $user_data ['cidademunicipio']?></li>
-                    <li> <?php echo $user_data ['endereco']?></li>
-                    <li>preço: <?php echo $user_data ['preco']?> / <?php echo $user_data ['Pretende']?></li>
-                    <li></li>
-                  </ul>
-                   <p class="bottomtext"> </p> 
-                   
-                    <div class="actioncard"> 
-                      <button class="action"><a class='btn' name='btn' href='marcação.php'> Solicitar encontro</a></button> 
-                    </div>
-                   </div> 
-                  </div>
-                  <?php
+    <tr>
+     <td><img height="200" src="<?php echo $user_data ['fotos']?>"></td>
+     <td><?php echo $user_data ['tipo']?></td>
+    <td><?php echo $user_data ['preco']?></td>
+    <td><?php echo $user_data ['cidademunicipio']?></td>
+    <td><?php echo $user_data ['endereco']?></td>
+    <td><?php echo $user_data ['Pretende']?></td>
+  
+
+    <td> 
+    <a class='btn' name='btn' href='carrinho.html'>
+
+    <td> 
+    <a class='btn' name='btn' href='marcação.php'>
+
+    <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-cart' viewBox='0 0 16 16'>
+  <path d='M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z'/>
+   </svg>
+    </a>
+
+
+    </td>
+   </tr>
+
+    <?php
    }
 
    
@@ -154,22 +179,37 @@ $result = $conexao->query($sql);
 
   
    ?>
-                  </div>
+   
+
+  </tbody>
+</table>
 
 
-           <!--Card-->
+
+
+    
+  
+           
           </div>
+
+
+
+
+
           <div class="slogan" ></div>   
         </div>
     </main>
+
+
+
     <footer >
       <div class=" container-footer" >
+      
       </div>
+
       <div id="conteiner_f" >
 
-        <div id="item1f">
-          <p>Localização:</p>
-        </div>
+
 
         <div id="item2f">
           <p>Redes sociais<i class="fa-brands fa-instagram"></i>
@@ -177,7 +217,7 @@ $result = $conexao->query($sql);
 
              </p>
 
-             <p>Contactos:</p>
+             <p><a href="contactos.html">Contacte nos</a> </p>
         </div>
       </div>
 

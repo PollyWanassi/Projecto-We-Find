@@ -29,6 +29,8 @@
       
         <ul>
             <li><a href="Compras.html">Voltar</a></li>
+            <li><a href="contactos.html">Contatos</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
             <!--<li><a href="#">Minha conta</a></li>
             <li><a href="#">Vender</a></li>-->
             <li><a href="#" ></a></li>

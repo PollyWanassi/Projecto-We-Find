@@ -47,7 +47,9 @@ if(isset($_POST['submit']))
         <nav>
       
         <ul>
-            <li><a href="pag-principal.html">Pagina Inicial</a></li>
+            <li><a href="pag-principal.php">Voltar a página Inicial</a></li>
+            <li><a href="contactos.html">Contatos</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
             <li><a href="#"></a></li>
             <!--<li><a href="#">Vender</a></li>
             <li><a href="#" >Carrinho</a></li>-->

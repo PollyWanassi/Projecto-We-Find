@@ -42,7 +42,9 @@ $result = $conexao->query($sql);
         <nav>
             
             <div class="nav-lists">
-                <li><a href="pag-principal.php">Pagina Inicial</a></li>
+            <li><a href="pag-principal.php">Voltar a página Inicial</a></li>
+                <li><a href="contactos.html">Contatos</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
                 <li><a href=""> </a></li>
             </div>
             <img src="img/transferir.jpg" alt="" class="user-pic" onclick="toggleMenu()">

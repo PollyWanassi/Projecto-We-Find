@@ -14,12 +14,13 @@ if(isset($_POST['submit']))
    $email=$_POST['email'];
    $tipo_usuario=$_POST['tipo_usuario'];
 
-
+  
 
    $result=mysqli_query($conexao,"INSERT INTO usario(Nome,Sobrenome,Senha,Telefone,Email,Tipo_usuario) VALUES ( '$nome', '$sobrenome','$senha',
    '$telefone','$email','$tipo_usuario')"); 
 
 
+ 
 }
 ?>
 <!DOCTYPE html>
@@ -55,6 +56,8 @@ if(isset($_POST['submit']))
       
         <ul>
             <li><a href="pag-principal.html">Pagina Inicial</a></li>
+            <li><a href="contactos.html">Contatos</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
             <li><a href="#"></a></li>
             <!--<li><a href="#">Vender</a></li>
             <li><a href="#" >Carrinho</a></li>-->
@@ -69,7 +72,7 @@ if(isset($_POST['submit']))
                 <img src="img/logo.png" alt="" class="go"></a>
                 <header class="lo">Cadastro</header>
 
-                <form action="Criar_conta.php" method="POST">
+                <form action="Entrar.php" method="POST">
 
                     <div class="field input-field">
                      <input type="text" class="input"  id="Nome" name="nome" placeholder="Nome" required>
