@@ -32,7 +32,7 @@
                     <fieldset name="det">
                         <legend >Descrição</legend>
 
-                        <label for="Ed">Tipo de Edificio</label>
+                        <label for="Ed">Tipo de imoveis</label>
                         <select name="ed" id="Ed">
                             <option value="Loja">Loja</option>
                             <option value="casa">Casa</option>

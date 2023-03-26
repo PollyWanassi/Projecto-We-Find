@@ -43,8 +43,8 @@ $result = $conexao->query($sql);
           <ul class="navegacao">
               <li><a href="perfil_original.php">Perfil</a></li>
                 <li><a href="cadastro_de_casas.php">Vender</a></li>
-                <li><a href="contactos.html">Contatos</a></li>
-            <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
                 <li><a href=""> </a></li>
           </ul>
         </nav>

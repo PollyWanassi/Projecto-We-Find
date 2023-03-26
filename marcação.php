@@ -47,8 +47,8 @@ if(isset($_POST['submit']))
       
         <ul>
             <li><a href="pag-principal.php">Voltar a página Inicial</a></li>
-            <li><a href="contactos.html">Contatos</a></li>
-            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
             <li><a href="#"></a></li>
             
         </ul>

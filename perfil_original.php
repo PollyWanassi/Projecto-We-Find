@@ -43,8 +43,8 @@ $result = $conexao->query($sql);
             
             <div class="nav-lists">
             <li><a href="pag-principal.php">Voltar a página Inicial</a></li>
-                <li><a href="contactos.html">Contatos</a></li>
-            <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
             </div>
             <img src="img/bx+exit-1325051876009818850.png" alt="" class="user-pic" onclick="toggleMenu()">
     
