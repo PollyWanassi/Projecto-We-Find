@@ -51,29 +51,15 @@ $result = $conexao->query($sql);
       </header>
   
 
-<!-- 
-<div class="content">
-  <div class="search-bar" >
-    <input type="text " class="search-bar_input" placeholder="pesquisar" aria-label="search"/>
-    <buttom class="search-bar_submit" aria-label="submit search"><i class="fa-solid fa-magnifying-glass" ></i></buttom>
 
-  </div> -->
 
-</div>
 
 <!-- o Conteudo vai ser mostrado no item2-->
     <main>
-      <!--<div class="container" style="border: yellow solid 2px;">
-        <div class="item item1">Item 1
-          <div class="re-so"><img src="img/whatsapp.svg" alt=""></div>
-          <div class="re-so"><img src="img/instagram.svg" alt=""></div>
-          <div class="re-so"><img src="img/mobile-button-solid.svg" alt=""></div>
-        </div> -->
+
       
         <div class="item item2" >
-          <div class ="barranome">
-            <h1></h1>
-          </div>
+ 
 
           <div class="slider-cont">
           <div class="slides">

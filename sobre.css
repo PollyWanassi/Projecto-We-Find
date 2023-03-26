@@ -13,15 +13,13 @@ header{
     flex-direction: row;
     justify-content: space-around;
     font-family: "balans";
-
- 
 }
 
 header img{
     margin-top: 8px;
     margin-left: 4px;
-    width: 70px;
-    height:70px;
+    width: 60px;
+    height:60px;
   }
 
 
