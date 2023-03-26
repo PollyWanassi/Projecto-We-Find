@@ -122,7 +122,31 @@ $result = $conexao->query($sql);
 
 
           <div class="conteudo">
-           
+          <div class="card">
+            <div class="topcard">
+                <h2 class="title">Título do card</h2>
+            </div>
+            <div class="mediacard"></div>
+            <div class="bottomcard">
+                <p class="bottomtext">Aqui é um texto com os detalhes da casa Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos iure nam optio! Molestias hic iste delectus ad tempora eaque nisi et labore aliquid distinctio soluta ratione, aut earum optio maiores.</p>
+                <ul class="lista">
+                    <li> Tipo</li>
+                    <li>Preço</li>
+                    <li>Cidade</li>
+                    <li>Municipio</li>
+                    <li>Endereço</li>
+                    <li>Disponivel para</li>
+              
+                    
+                </ul>
+             <!--    <div class="actioncard">
+                    <button class="action">Curtir</button>
+                    <button class="action">Detalhes</button>
+                </div> -->
+
+        </div>
+       
+        </div>
           
             <div>
               <table class="table text-white table-bg">
@@ -176,12 +200,10 @@ $result = $conexao->query($sql);
            
           </div>
 
-
-
-
-
           <div class="slogan" ></div>   
+
         </div>
+
     </main>
 
 
