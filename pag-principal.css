@@ -2,7 +2,7 @@
 html{
 
   font-family: 'balans';
-  font-size: 62.5%;
+
 
 }
 body{
@@ -20,7 +20,7 @@ header{
   
 }
 header img{
-  margin-left: 20px;
+  margin-top: 10px;
   width: 60px;
   height:60px;
 }
@@ -32,9 +32,8 @@ header .navegacao{
   color: white;
 }
 
-
 nav{
-padding: 2rem;
+padding: 1rem;
   
 }
 
@@ -49,7 +48,7 @@ nav ul li a{
   text-decoration: none;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
-  font-size: 1.6em;
+  font-size: 1.3em;
 } 
       
 
@@ -63,59 +62,7 @@ nav ul li a{
 
 }
 
-.search-bar{
-  display: flex;
-  margin: auto
-  ;
-  /*gap: 4px;*/
-  max-width: 400px;
- /* padding:10px ;*/
-}
 
- .search-bar_input{
-flex-grow: 1;
-font-size: 1.8rem;
-border-radius: 4px;
-outline: none;
-cursor: pointer;
- }
-
-.search-bar_submit{
-  font-size: 1.5rem;
-  cursor: pointer;
-  border: 0;
-  border-radius: 50%;
-  background: rgb(75, 75, 75);
-  width: 25px;
-  height: 25px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-
-  }
-
-/*.search input{
-  width: 320px;
-  height: 30px;
-  border: 1px solid #fff;
-  outline: none;
-  border-radius: 4px;
-  font-size: 1.8em;
-}
-#btn-search{
-  width: 110px;
-  background-color: #9c9c9c;
-  border-radius:4px ;
-}
-#btn-search>p{
-  font-size: 1.7em;
-}
-*/
-/*.search-box{
-  position: absolute;
-
-}*/
 main{
   min-width: 320px;
   max-width: 120rem;
@@ -127,19 +74,7 @@ main{
   display: flex;
 }
 
-/*.item1 {
-  width: 50px;
-  height: 250px ;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(101, 119, 67);
-  text-align: center;
-}
-*/
+
 
 /* item*/
 .item2 {
@@ -152,20 +87,6 @@ main{
 
  /* barras, ainda precisa de centralizar os h1*/
 }
-
-/*.barranome{  
-    padding: 20px 0 20px 0;
-    flex-shrink: 4;
-    margin: auto;
-    border-radius: 50px;
-    max-width: 830px;
-    min-width: 320px;
-    height: 30px;
-    background-color: rgb(255, 255, 255);
-   
-}*/
-
-
 
 
 .barrades{
@@ -513,38 +434,5 @@ height: 35px;
     font-family: "balans";
     font-size: 15px;
    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
